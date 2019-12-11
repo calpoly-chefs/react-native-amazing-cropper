@@ -595,25 +595,10 @@ class CropperPage extends Component {
       size: { width, height },
       resizeMode: 'stretch'
     };
-    RNImageRotate.rotateImage(
-      this.props.imageUri,
-      this.state.rotation,
-      (rotatedUri) => {
-        //
-        ImageEditor.cropImage(rotatedUri, cropData)
+    ImageEditor.cropImage(this.props.imageUri, cropData)
         .then((croppedUri) => {
           this.props.onDone(croppedUri);
-        })
-        .catch(err => {
-          console.log('cropping error');
-          console.log(err);
         });
-        //
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
   }
 
   render() {
