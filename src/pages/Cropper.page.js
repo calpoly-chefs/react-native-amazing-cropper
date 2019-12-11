@@ -595,6 +595,7 @@ class CropperPage extends Component {
       size: { width, height },
       resizeMode: 'stretch'
     };
+    console.log("IMAGE URI IN CROPPER: ", this.props.imageUri, "CROP DATA: ", cropData);
     ImageEditor.cropImage(this.props.imageUri, cropData)
         .then((croppedUri) => {
           this.props.onDone(croppedUri);
