@@ -569,6 +569,7 @@ class CropperPage extends Component {
   }
 
   onDone = () => {
+    console.log("Test");
     if (this.isRectangleMoving) return null;
 
     //this.setState({ isSaving: true });
