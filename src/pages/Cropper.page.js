@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Animated, PanResponder } from 'react-native';
-import RNImageRotate from 'react-native-image-rotate';
 import ImageEditor from '@react-native-community/image-editor';
 import PropTypes from 'prop-types';
 import { SCREEN_WIDTH, SCREEN_HEIGHT, W, H, Q } from '../components/Cropper/Cropper.constants';
@@ -596,10 +595,10 @@ class CropperPage extends Component {
       resizeMode: 'stretch'
     };
     console.log("IMAGE URI IN CROPPER: ", this.props.imageUri, "CROP DATA: ", cropData);
-    ImageEditor.cropImage(this.props.imageUri, cropData)
-        .then((croppedUri) => {
-          this.props.onDone(croppedUri);
-        });
+    // ImageEditor.cropImage(this.props.imageUri, cropData)
+    //     .then((croppedUri) => {
+    //       this.props.onDone(croppedUri);
+    //     });
   }
 
   render() {
