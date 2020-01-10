@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Animated, PanResponder } from 'react-native';
-import ImageEditor from '@react-native-community/image-editor';
+import * as ImageManipulator from '@expo/expo-image-manipulator';
 import PropTypes from 'prop-types';
 import { SCREEN_WIDTH, SCREEN_HEIGHT, W, H, Q } from '../components/Cropper/Cropper.constants';
 import Cropper from '../components/Cropper/Cropper.component';

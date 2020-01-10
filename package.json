@@ -22,8 +22,7 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-image-rotate": "*",
-    "@react-native-community/image-editor": "*"
+    "@expo/expo-image-manipulator": "*"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
