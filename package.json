@@ -22,7 +22,7 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "@expo/expo-image-manipulator": "*"
+    "expo-image-manipulator": "*"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
